@@ -2,11 +2,10 @@ import { Pressable, StyleSheet, Text } from "react-native";
 
 export const MyButton = ({ isDisabled, text, onPress}) => {
     return (
-
         <Pressable
             style={styles.button}
             onPress={onPress}
-            disabled={isDisabled}
+            disabled={false}
         >
             <Text style={styles.buttonText} >{text}</Text>
         </Pressable>
